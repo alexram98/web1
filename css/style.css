@@ -1,0 +1,107 @@
+/*SELECTOR UNIVERSAL PARA CONTROLAR LOS MARGENES Y RELLENOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilo para body*/
+body{
+ background-image: url("../img/fondo.webp");
+ background-repeat: no-repeat ;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+}
+
+/*ESTILO PARA ENACABEZADO*/
+header{
+    display: flex;
+    background-color: maroon;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 250px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    position: relative;
+    float: left;
+}
+
+.menu ul li a{ 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 20px ;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+main{
+    width: 90%;
+    background-color: rgb(181, 207, 207, 0.868);
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .card{
+    background-color: white;
+    width: 270px ;
+    border-style: dashed;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px black;
+}
+
+.container .card img{
+    width: 80%;
+}
+
+.container .card h3{
+    font-size: 25px;
+    background-color: khaki;
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.container .card p{
+    text-align: justify;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.primeraletra::first-letter{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+footer{
+    letter-spacing: 5px;
+    text-align: right;
+    color: white;
+    padding: 30px;
+    background-color: rgb(128, 128, 192 0.778);
+}
